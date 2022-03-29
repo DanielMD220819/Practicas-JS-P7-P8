@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 8</title>
+</head>
+<body>
+    <form action="practica8.html" method="get" autocomplete>
+        <h3>Text</h3>
+        <label form="nombre">Nombre:</label>
+        <input name="nombre" type="text" value="" readonly disabled size="40" maxlength="10" pattern="[A-Za-z]{3}" placeholder="First name">
+        <h3>Radio</h3>
+        <input type="radio" name="gender" value="male" checked>male
+        <br>
+        <input type="radio" name="gender" value="female">Female
+        <br>
+        <input type="radio" name="gender" value="other"> other
+        <h3>Select</h3>
+        <label form="cars">Cars:</label>
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <h3>TextArea</h3>
+        <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+        </textarea>
+        <h3>Datalist</h3>
+        <label form="nombre">Navegador:</label>
+        <input type="list">
+        <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="safari"></option>
+        </datalist>
+        <h3>Password</h3>
+        <label form="password">Keyword:</label>
+        <input type="password" name="psw" required>
+        <h3>Checkbox</h3>
+        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike <br>
+        <input type="checkbox" name="vehicle2" value="Car"> I have a car
+        <h3>Color</h3>
+        <label form="color">Color:</label>
+        <input type="color" name="favcolor">
+        <h3>Fecha</h3>
+        <label form="date">Fecha:</label>
+        <input type="date" name="bday" min="2000-01-02">
+        <h3>Datetime</h3>
+        <label form="datetime-">Datetime:</label>
+        <input type="datetime-local" name="bdaytime">
+        <h3>Email</h3>
+        <label form="email">Email:</label>
+        <input type="email" name="email" autocomplete="off">
+        <h3>Number</h3>
+        <label form="number">Number:</label>
+        <input type="number" name="quantity" min="1" max="25" step="3">
+        <h3>Points</h3>
+        <label form="points">Numero desde y hasta:</label>
+        <input type="number" name="points" min="0" max="100" step="10" value="30">
+        <h3>Range</h3>
+        <label form="range">Rango:</label>
+        <input type="range" name="points" min="0" max="10">
+        <h3>Search</h3>
+        <label form="search">Search:</label>
+        <input type="search" name="googlesearch">
+        <h3>Timw</h3>
+        <label form="time">Hora:</label>
+        <input type="time" name="usr_time">
+        <h3>URL</h3>
+        <label form="url">URL:</label>
+        <input type="url" name="homepage">
+        <h3>Week</h3>
+        <label form="week">Semana Año:</label>
+        <input type="week" name="week_year">
+        <h3>File</h3>
+        <label form="fichero">Ficheros:</label>
+        <input type="file" name="img" multiple>
+        <br>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
